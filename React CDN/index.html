@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning react</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <!-- <h1>Hello World</h1> -->
+    </div>
+
+    <!-- <script>
+        const h1 = document.createElement("h2 ");
+        h1.innerHTML="Hello World from javaScript"
+        const root = document.getElementById("root")
+        root.appendChild(h1)
+    </script> -->
+
+    <script crossorigin
+     src="https://unpkg.com/react@18/umd/react.development.js"> //core react
+    </script>
+    <script crossorigin
+     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> //dom (document object model)
+    </script>
+
+    <script>
+        const h2= React.createElement("h2",{},"hello world from- react")
+        const ren = ReactDOM.createRoot(document.getElementById("root"))
+        ren.render(h2)
+
+    </script>
+
+</body>
+
+</html>
