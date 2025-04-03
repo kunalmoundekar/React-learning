@@ -11,13 +11,11 @@
 
 
 
-const parant = React.createElement(
-    "div",
-     { id: "parant" },"hii",
+const parant = React.createElement( "div",{ id: "parant" },["hii",
     React.createElement("div",{id:"1child"}),
-    React.createElement(
-    "div", { id: "childElement" },
-               React.createElement("h1",{},"i am h1 tag")))
+    React.createElement("div", { id: "childElement" },
+    React.createElement("h1",{},"i am h1 tag"))
+])
 const parantRender = ReactDOM.createRoot(document.getElementById("root"))
 parantRender.render(parant)
 
